@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{ee650d21-c987-4ad2-a74b-873bbe8f7885}</ProjectGuid>
+    <ProjectHome />
+    <StartupFile>fesbsc2.py</StartupFile>
+    <SearchPath />
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <InterpreterId />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition=" '$(VisualStudioVersion)' == '' ">10.0</VisualStudioVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="chromepath.txt" />
+    <Content Include="details.html" />
+    <Content Include="details2.html" />
+    <Content Include="details2_files\application-9da833d17d83890ecd76135acdc6b11d.css" />
+    <Content Include="details2_files\styles__ltr.css" />
+    <Content Include="details_files\application-9da833d17d83890ecd76135acdc6b11d.css" />
+    <Content Include="details_files\styles__ltr.css" />
+    <Content Include="Pictures\donate.png" />
+    <Content Include="Pictures\title.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="aes.py" />
+    <Compile Include="fesbsc2.py" />
+    <Compile Include="input_manual.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="details2_files" />
+    <Folder Include="details_files" />
+    <Folder Include="Pictures" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+</Project>
